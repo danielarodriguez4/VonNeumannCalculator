@@ -1,0 +1,56 @@
+.separador {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: row;
+  color: black;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  height: 60%;
+  width: 500px;
+  max-width: 500px;
+  text-align: center;
+  z-index: 1;
+  left: 20px;
+  top: 30px;
+ /* transform: translateY(20%); Ajustar para centrar */
+}
+.control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  z-index: 1;
+}
+.control p {
+  margin-bottom: 10px;
+
+  z-index: 1;
+}
+.decoder {
+  color: rgb(36, 37, 37);
+  background-color: grey;
+  border: 1px solid black;
+  width: 80px;
+  height: 80px;
+  max-width: 100px;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.iluminar {
+  animation: iluminar 3s ease-in-out;
+}
+
+@keyframes iluminar {
+  0% {
+    background-color: #54925c;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
